@@ -11,6 +11,6 @@ class Config:
     Eventually will use hidden varible items - but for now, we'll leave them exposed in config
     """
     SECRET_KEY="You will never guess..."
-    DEPLOY_DATABASE_URL = os.environ.get('DEPLOY_DATABASE_URL')
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DEPLOY_DATABASE_URL')
     # Decreases unnessary optput in terminal
     SQLALCHEMY_TRACK_MODIFICATIONS = False 
